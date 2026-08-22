@@ -1,0 +1,63 @@
+:root{
+  --paper:#f8f5f0;
+  --ink:#13202e;
+  --body:#4f5358;
+  --gray:#8b8580;
+  --aqua:#55b9bd;
+  --red:#d91c2b;
+  --line:rgba(19,32,46,.16);
+  --panel:rgba(255,255,255,.72);
+  --display:"Bodoni MT",Didot,"Baskerville","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --text:"Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--text);line-height:1.68}
+.top-nav{position:fixed;z-index:30;top:0;left:0;width:100%;display:flex;justify-content:center;gap:34px;padding:20px 24px;background:rgba(248,245,240,.72);backdrop-filter:blur(10px);border-bottom:1px solid rgba(19,32,46,.06)}
+.top-nav a{text-decoration:none;text-transform:uppercase;letter-spacing:.12em;font-size:10px;font-weight:700;color:#44484c;position:relative;padding:5px 0}
+.top-nav a:hover{color:var(--red)}
+.watercolor-page{position:relative;background-color:var(--paper);background-repeat:no-repeat;background-position:center;background-size:cover}
+.hero{min-height:100vh;display:grid;place-items:center;background-image:url('img/acuarela-portada.jpg')}
+.hero-inner{text-align:center;width:min(92vw,1100px);padding:110px 24px 60px}
+.hero-logo{width:min(86vw,940px);height:auto;display:block;margin:auto;filter:drop-shadow(0 12px 30px rgba(0,0,0,.04))}
+.scroll-cue{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);text-decoration:none;font-family:var(--display);font-size:38px;color:#8e8984}
+.suite-section{background-image:url('img/acuarela-suite.jpg');min-height:100vh;display:flex;align-items:center}
+.origin-section{background-image:url('img/acuarela-origen.jpg')}
+.principles-section{background-image:url('img/acuarela-principios.jpg');min-height:100vh;display:flex;align-items:center}
+.editorial-shell{width:min(1120px,calc(100% - 48px));margin:auto;padding:120px 0}
+.suite-shell{padding-top:150px;padding-bottom:120px}
+.eyebrow,.section-label{margin:0 0 10px;color:var(--aqua);font-size:13px;letter-spacing:.24em;font-weight:700}
+.suite-shell h1{margin:0;font-family:var(--display);font-weight:400;font-size:clamp(72px,10vw,142px);line-height:.78;letter-spacing:-.045em}
+.suite-shell h1 span{display:block}
+.suite-shell h1 .gray{color:var(--gray)}
+.red-rule{width:76px;height:2px;background:var(--red);margin:42px 0 24px}
+.suite-shell h2{font-family:var(--text);font-size:clamp(18px,2vw,27px);line-height:1.35;font-weight:500;margin:0;max-width:680px}
+.intro-grid{margin-top:60px;padding-top:30px;border-top:1px solid var(--line);display:grid;grid-template-columns:1.04fr .96fr;gap:58px;max-width:1040px}
+.intro-grid p{margin:0;color:var(--body);font-size:17px}
+.intro-grid .lead{font-family:var(--display);font-size:25px;line-height:1.48;color:var(--ink)}
+blockquote{display:table;width:auto;max-width:900px;margin:50px auto 0;padding:18px 26px;background:rgba(255,255,255,.68);border:1px solid rgba(85,185,189,.36);border-radius:10px;font-family:var(--display);font-style:italic;font-size:clamp(20px,2.3vw,29px);line-height:1.4;text-align:center;color:#3d777b}
+.section-title{font-family:var(--display);font-weight:400;font-size:clamp(52px,6vw,82px);line-height:1;margin:0;letter-spacing:-.035em}
+.section-subtitle{margin:12px 0 44px;font-family:var(--display);font-style:italic;color:#43878b;font-size:23px}
+.origin-intro{display:grid;grid-template-columns:1fr 1fr;gap:36px;border-top:1px solid var(--line);padding-top:30px;margin-bottom:28px}
+.origin-intro p{margin:0;color:var(--body);font-size:17px}
+.companions-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.companion{display:grid;grid-template-columns:82px 1fr;gap:22px;padding:26px 28px;background:var(--panel);border:1px solid var(--line);border-radius:14px;backdrop-filter:blur(2px)}
+.companion-mark{font-family:var(--text);font-weight:800;font-size:50px;line-height:1;width:66px;padding-bottom:11px;text-align:center}
+.astor-card .companion-mark{color:#111;border-bottom:4px solid var(--red)}
+.wilson-card .companion-mark{color:#8a8580;border-bottom:4px solid var(--aqua)}
+.companion h3,.shared-values h3,.principles-grid h3{font-family:var(--display);font-weight:400;font-size:29px;line-height:1.1;margin:0 0 5px}
+.trait{font-family:var(--display);font-style:italic;color:#43878b;margin:0 0 10px;font-size:18px}
+.companion p,.shared-values p{margin:0;color:#555a5f;font-size:15px}
+.companion p+p,.shared-values p+p{margin-top:10px}
+.shared-values{display:table;width:auto;max-width:960px;margin:22px auto 0;padding:24px 28px;background:var(--panel);border:1px solid rgba(85,185,189,.30);border-radius:14px}
+.origin-closing{display:table;width:auto;max-width:880px;margin:34px auto 0;font-family:var(--display);font-style:italic;text-align:center;color:#477d80;font-size:24px}
+.principles-shell{padding-top:140px;padding-bottom:120px}
+.principles-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;align-items:start;margin-top:34px}
+.principles-grid article{height:auto;padding:21px 19px 20px;background:rgba(255,255,255,.72);border:1px solid var(--line);border-top:3px solid var(--aqua);border-radius:8px}
+.principles-grid .num{font-size:10px;letter-spacing:.18em;color:var(--aqua);font-weight:700}
+.principles-grid h3{font-size:21px;margin:10px 0 8px}
+.principles-grid p{margin:0;color:#60646a;font-size:13px;line-height:1.55}
+footer{padding:58px 24px;text-align:center;background:#f8f5f0;border-top:1px solid rgba(19,32,46,.10)}
+footer img{width:min(320px,72vw);height:auto}
+@media(max-width:920px){.top-nav{gap:20px}.intro-grid,.origin-intro,.companions-grid{grid-template-columns:1fr}.principles-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.companion{width:100%}}
+@media(max-width:620px){.top-nav{padding:15px 12px;gap:14px;overflow-x:auto;justify-content:flex-start}.top-nav a{font-size:9px;white-space:nowrap}.hero-inner{padding-top:90px}.editorial-shell{width:min(100% - 32px,1120px);padding:88px 0}.suite-shell h1{font-size:clamp(64px,23vw,105px)}.suite-shell{padding-top:120px}.intro-grid{gap:22px;margin-top:42px}.intro-grid .lead{font-size:22px}.companion{grid-template-columns:62px 1fr;padding:22px 18px}.companion-mark{width:54px;font-size:40px}.shared-values{padding:22px 20px}.principles-grid{grid-template-columns:1fr}blockquote{padding:16px 18px}.section-title{font-size:54px}}
