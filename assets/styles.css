@@ -40,7 +40,7 @@ blockquote{display:table;width:auto;max-width:900px;margin:50px auto 0;padding:1
 .section-subtitle{margin:12px 0 44px;font-family:var(--display);font-style:italic;color:#43878b;font-size:23px}
 .origin-intro{display:grid;grid-template-columns:1fr 1fr;gap:36px;border-top:1px solid var(--line);padding-top:30px;margin-bottom:28px}
 .origin-intro p{margin:0;color:var(--body);font-size:17px}
-.companions-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.companions-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}
 .companion{display:grid;grid-template-columns:82px 1fr;gap:22px;padding:26px 28px;background:var(--panel);border:1px solid var(--line);border-radius:14px;backdrop-filter:blur(2px)}
 .companion-mark{font-family:var(--text);font-weight:800;font-size:50px;line-height:1;width:66px;padding-bottom:11px;text-align:center}
 .astor-card .companion-mark{color:#111;border-bottom:4px solid var(--red)}
@@ -52,8 +52,8 @@ blockquote{display:table;width:auto;max-width:900px;margin:50px auto 0;padding:1
 .shared-values{display:table;width:auto;max-width:960px;margin:22px auto 0;padding:24px 28px;background:var(--panel);border:1px solid rgba(85,185,189,.30);border-radius:14px}
 .origin-closing{display:table;width:auto;max-width:880px;margin:34px auto 0;font-family:var(--display);font-style:italic;text-align:center;color:#477d80;font-size:24px}
 .principles-shell{padding-top:140px;padding-bottom:120px}
-.principles-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;align-items:start;margin-top:34px}
-.principles-grid article{height:auto;padding:21px 19px 20px;background:rgba(255,255,255,.72);border:1px solid var(--line);border-top:3px solid var(--aqua);border-radius:8px}
+.principles-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;align-items:stretch;margin-top:34px}
+.principles-grid article{height:100%;padding:21px 19px 20px;background:rgba(255,255,255,.72);border:1px solid var(--line);border-top:3px solid var(--aqua);border-radius:8px}
 .principles-grid .num{font-size:10px;letter-spacing:.18em;color:var(--aqua);font-weight:700}
 .principles-grid h3{font-size:21px;margin:10px 0 8px}
 .principles-grid p{margin:0;color:#60646a;font-size:13px;line-height:1.55}
