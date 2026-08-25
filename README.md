@@ -1,11 +1,8 @@
-# Suite Astor Wilson — sitio v7
+# Sitio Astor Wilson v8
 
-Landing institucional estática para GitHub Pages.
-
-Estructura:
-1. Portada con logo Astor Wilson sobre acuarela.
-2. Presentación editorial de la Suite.
-3. Inspiración: Astor y Wilson, desarrollados en profundidad.
-4. Principios.
-
-Usa exclusivamente recursos locales; no requiere bibliotecas externas.
+Mejoras incluidas:
+- fondos acuarelados reexportados en 2x y utilizados como capas decorativas, evitando el estiramiento a pantalla completa;
+- logo Astor Wilson reexportado en 2x PNG para mayor nitidez;
+- ajustes generales de composición para desktop y celular;
+- paneles y bloques con más aire, mejor contraste y sombras sutiles;
+- navegación sticky más cuidada.
