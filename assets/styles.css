@@ -23,23 +23,24 @@ img{max-width:100%;height:auto}
 .top-nav a{text-decoration:none;text-transform:uppercase;letter-spacing:.14em;font-size:10px;font-weight:700;color:#44484c;position:relative;padding:6px 0;transition:color .2s ease}
 .top-nav a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--red);transform:scaleX(0);transform-origin:center;transition:transform .2s ease}
 .top-nav a:hover{color:var(--red)}
-.top-nav a:hover::after,.top-nav a:focus-visible::after{transform:scaleX(1)}
+.top-nav a:hover::after,.top-nav a:focus-visible::after,.top-nav a.active::after{transform:scaleX(1)}
+.top-nav a.active{color:var(--red)}
 .section-watercolor{position:relative;overflow:hidden;background:linear-gradient(180deg, rgba(248,245,240,.64), rgba(248,245,240,.72));isolation:isolate}
 .section-watercolor::before,.section-watercolor::after{content:"";position:absolute;inset:auto;pointer-events:none;background-repeat:no-repeat;background-size:contain;opacity:1;z-index:-2;filter:saturate(1.18) contrast(1.04);mask-image:radial-gradient(closest-side, rgba(0,0,0,1) 88%, rgba(0,0,0,0) 100%);-webkit-mask-image:radial-gradient(closest-side, rgba(0,0,0,1) 88%, rgba(0,0,0,0) 100%)}
 .section-watercolor::after{opacity:.85;z-index:-3}
 .hero{min-height:100svh;display:grid;place-items:center;padding:0 24px}
-.hero-watercolor::before{width:100%;height:100%;left:0;top:0;transform:none;background-image:url('img/acuarela-portada-2x.jpg');background-size:cover;background-position:center 4%}
+.hero-watercolor::before{width:100%;height:100%;left:0;top:0;transform:translateY(var(--py-a,0px));background-image:url('img/acuarela-portada-2x.jpg');background-size:cover;background-position:center 4%}
 .hero-watercolor::after{opacity:0}
 .hero-inner{text-align:center;width:min(90vw,1000px);padding:110px 0 80px}
 .hero-logo{width:min(78vw,780px);display:block;margin:auto;filter:drop-shadow(0 10px 22px rgba(0,0,0,.05))}
 .scroll-cue{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);text-decoration:none;font-family:var(--display);font-size:38px;color:#8e8984}
 .suite-section,.principles-section{min-height:100svh;display:flex;align-items:center}
-.suite-watercolor::before{width:min(52vw,820px);height:min(74vw,1150px);left:-7vw;top:40px;background-image:url('img/acuarela-suite-2x.jpg');opacity:.9}
-.suite-watercolor::after{width:min(49vw,760px);height:min(68vw,1060px);right:-8vw;bottom:20px;background-image:url('img/acuarela-suite-2x.jpg');transform:scaleX(-1);opacity:.72}
-.origin-watercolor::before{width:min(50vw,780px);height:min(70vw,1080px);left:-7vw;top:140px;background-image:url('img/acuarela-origen-2x.jpg');opacity:.86}
-.origin-watercolor::after{width:min(44vw,700px);height:min(62vw,960px);right:-7vw;bottom:140px;background-image:url('img/acuarela-origen-2x.jpg');transform:scaleX(-1);opacity:.68}
-.principles-watercolor::before{width:min(48vw,760px);height:min(66vw,1020px);left:-8vw;top:110px;background-image:url('img/acuarela-principios-2x.jpg');opacity:.84}
-.principles-watercolor::after{width:min(46vw,720px);height:min(64vw,1000px);right:-7vw;bottom:20px;background-image:url('img/acuarela-principios-2x.jpg');transform:scaleX(-1);opacity:.7}
+.suite-watercolor::before{width:min(52vw,820px);height:min(74vw,1150px);left:-7vw;top:40px;background-image:url('img/acuarela-suite-2x.jpg');opacity:.9;transform:translateY(var(--py-a,0px))}
+.suite-watercolor::after{width:min(49vw,760px);height:min(68vw,1060px);right:-8vw;bottom:20px;background-image:url('img/acuarela-suite-2x.jpg');transform:scaleX(-1) translateY(var(--py-b,0px));opacity:.72}
+.origin-watercolor::before{width:min(50vw,780px);height:min(70vw,1080px);left:-7vw;top:140px;background-image:url('img/acuarela-origen-2x.jpg');opacity:.86;transform:translateY(var(--py-a,0px))}
+.origin-watercolor::after{width:min(44vw,700px);height:min(62vw,960px);right:-7vw;bottom:140px;background-image:url('img/acuarela-origen-2x.jpg');transform:scaleX(-1) translateY(var(--py-b,0px));opacity:.68}
+.principles-watercolor::before{width:min(48vw,760px);height:min(66vw,1020px);left:-8vw;top:110px;background-image:url('img/acuarela-principios-2x.jpg');opacity:.84;transform:translateY(var(--py-a,0px))}
+.principles-watercolor::after{width:min(46vw,720px);height:min(64vw,1000px);right:-7vw;bottom:20px;background-image:url('img/acuarela-principios-2x.jpg');transform:scaleX(-1) translateY(var(--py-b,0px));opacity:.7}
 .editorial-shell{width:min(1140px,calc(100% - 48px));margin:auto;padding:116px 0;position:relative;z-index:1}
 .suite-shell{padding-top:132px;padding-bottom:120px}
 .eyebrow,.section-label{margin:0 0 10px;color:var(--aqua);font-size:13px;letter-spacing:.24em;font-weight:700}
@@ -108,4 +109,19 @@ footer img{width:min(280px,60vw)}
   blockquote{padding:16px 18px}
   .section-watercolor::before{width:96vw !important;height:126vw !important;left:-8vw !important;top:10px !important;opacity:.62}
   .section-watercolor::after{width:86vw !important;height:116vw !important;right:-14vw !important;bottom:10px !important;opacity:.4}
+}
+
+/* --- Interactividad: aparición al hacer scroll --- */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1);transition-delay:calc(var(--i,0) * .1s)}
+.reveal.is-visible{opacity:1;transform:translateY(0)}
+
+/* --- Interactividad: tarjetas con más reacción al hover --- */
+.companion,.principles-grid article{transition:transform .35s ease,box-shadow .35s ease}
+.companion:hover,.principles-grid article:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(19,32,46,.10)}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1 !important;transform:none !important;transition:none !important}
+  .companion,.principles-grid article{transition:none !important}
+  .companion:hover,.principles-grid article:hover{transform:none !important}
 }
