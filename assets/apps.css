@@ -1,7 +1,7 @@
 /* Presentación interactiva de las herramientas · estética original de la web */
 .apps-section{display:flex;align-items:center;min-height:85svh}
-.apps-watercolor::before{width:min(58vw,840px);height:min(72vw,1050px);left:-10vw;top:70px;background-image:url('img/acuarela-suite-2x.jpg');opacity:.67;transform:translateY(var(--py-a,0px))}
-.apps-watercolor::after{width:min(50vw,760px);height:min(62vw,960px);right:-9vw;bottom:0;background-image:url('img/acuarela-principios-2x.jpg');opacity:.57;transform:scaleX(-1) translateY(var(--py-b,0px))}
+
+
 .apps-shell{padding-top:112px;padding-bottom:110px}
 .apps-shell .section-title{max-width:950px}
 .apps-section-lead{max-width:780px;margin:22px 0 36px;font-size:17px;line-height:1.7;color:var(--body)}
@@ -79,3 +79,12 @@
 
 /* PUERTA: presentación especial de herramienta portátil */
 .apps-status[data-status="portatil"]{background:rgba(184,134,11,.08);border-color:rgba(184,134,11,.35);color:#86641e}
+
+
+/* Herramientas · misma lógica visual que La Suite */
+.apps-watercolor::before{width:min(52vw,820px);height:min(74vw,1150px);left:-7vw;top:40px;background-image:url('img/acuarela-suite-2x.jpg');opacity:.9;transform:translateY(var(--py-a,0px))}
+.apps-watercolor::after{width:min(49vw,760px);height:min(68vw,1060px);right:-8vw;bottom:20px;background-image:url('img/acuarela-suite-2x.jpg');transform:scaleX(-1) translateY(var(--py-b,0px));opacity:.72}
+@media (max-width: 900px){
+  .apps-watercolor::before{width:96vw !important;height:126vw !important;left:-8vw !important;top:10px !important;opacity:.62}
+  .apps-watercolor::after{width:86vw !important;height:116vw !important;right:-14vw !important;bottom:10px !important;opacity:.4}
+}
