@@ -8,12 +8,14 @@
   <title>Suite Astor Wilson</title>
   <link rel="icon" href="assets/img/favicon.png" type="image/png">
   <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/apps.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="top-nav" aria-label="Navegación principal">
       <a href="#inicio">Inicio</a>
       <a href="#suite">La Suite</a>
+      <a href="#herramientas">Herramientas</a>
       <a href="#origen">Astor y Wilson</a>
       <a href="#principios">Principios</a>
     </nav>
@@ -40,6 +42,62 @@
         </div>
 
         <blockquote class="reveal">“La tecnología debe ampliar el criterio del investigador, no ocupar su lugar.”</blockquote>
+      </div>
+    </section>
+
+
+    <section class="apps-section section-watercolor apps-watercolor" id="herramientas" aria-labelledby="apps-title">
+      <div class="editorial-shell apps-shell">
+        <p class="section-label reveal">LAS HERRAMIENTAS</p>
+        <h2 class="section-title reveal" style="--i:1" id="apps-title">Una Suite. Muchas posibilidades.</h2>
+        <p class="apps-section-lead reveal" style="--i:2">Cada aplicación tiene una función concreta. Explorá sus logos para conocer, en pocas palabras, qué hace cada una.</p>
+
+        <div class="apps-explorer reveal" style="--i:3" id="appsExplorer">
+          <div class="apps-toolbar">
+            <div class="apps-groups" role="group" aria-label="Grupos de aplicaciones">
+              <button class="apps-tab is-active" type="button" data-app-group="principales" aria-pressed="true">Principales <span>10</span></button>
+              <button class="apps-tab" type="button" data-app-group="auxiliares" aria-pressed="false">Auxiliares <span>9</span></button>
+              <button class="apps-tab" type="button" data-app-group="proyectos" aria-pressed="false">Proyectos <span>3</span></button>
+            </div>
+            <span class="apps-counter" id="appsCounter" aria-hidden="true">01 / 10</span>
+          </div>
+
+          <div class="apps-content" id="appsContent">
+            <div class="apps-poster" aria-hidden="true">
+              <span class="apps-poster-ring"></span>
+              <img id="appsLargeLogo" src="assets/img/apps/iris.png" width="170" height="170" alt="">
+            </div>
+            <div class="apps-detail" aria-live="polite" aria-atomic="true">
+              <span class="apps-kicker" id="appsKicker">FUENTES ABIERTAS</span>
+              <h3 id="appsName">IRIS</h3>
+              <p id="appsDescription">Permite relevar fuentes abiertas, registrar capturas y conservar sus datos de origen. Organiza la documentación por proyecto y facilita la elaboración de informes de lo relevado.</p>
+              <span class="apps-status" id="appsStatus" hidden></span>
+            </div>
+          </div>
+
+          <div class="apps-strip-bar">
+            <button class="apps-arrow" type="button" id="appsPrev" aria-label="Aplicación anterior" title="Anterior">
+              <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <div class="apps-strip" id="appsStrip" role="group" aria-label="Elegir una aplicación">
+              <button type="button" class="apps-logo-button is-active" aria-pressed="true" data-app-id="iris"><img src="assets/img/apps/iris.png" width="56" height="56" alt=""><span>IRIS</span></button>
+              <button type="button" class="apps-logo-button" aria-pressed="false" data-app-id="traza"><img src="assets/img/apps/traza.png" width="56" height="56" alt=""><span>TRAZA</span></button>
+              <button type="button" class="apps-logo-button" aria-pressed="false" data-app-id="cavi"><img src="assets/img/apps/cavi.png" width="56" height="56" alt=""><span>CAVI</span></button>
+              <button type="button" class="apps-logo-button" aria-pressed="false" data-app-id="vera"><img src="assets/img/apps/vera.png" width="56" height="56" alt=""><span>VERA</span></button>
+              <button type="button" class="apps-logo-button" aria-pressed="false" data-app-id="lara"><img src="assets/img/apps/lara.png" width="56" height="56" alt=""><span>LARA</span></button>
+              <button type="button" class="apps-logo-button" aria-pressed="false" data-app-id="sirilo"><img src="assets/img/apps/sirilo.png" width="56" height="56" alt=""><span>SIRILO</span></button>
+              <button type="button" class="apps-logo-button" aria-pressed="false" data-app-id="audia"><img src="assets/img/apps/audia.png" width="56" height="56" alt=""><span>AUDIA + VEDIA</span></button>
+              <button type="button" class="apps-logo-button" aria-pressed="false" data-app-id="fico"><img src="assets/img/apps/fico.png" width="56" height="56" alt=""><span>FICO</span></button>
+              <button type="button" class="apps-logo-button" aria-pressed="false" data-app-id="cintia"><img src="assets/img/apps/cintia.png" width="56" height="56" alt=""><span>CintIA</span></button>
+              <button type="button" class="apps-logo-button" aria-pressed="false" data-app-id="cata"><img src="assets/img/apps/cata.png" width="56" height="56" alt=""><span>CATA</span></button>
+            </div>
+            <button class="apps-arrow" type="button" id="appsNext" aria-label="Aplicación siguiente" title="Siguiente">
+              <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+          <p class="apps-hint">Seleccioná un logo o usá las flechas para recorrer las aplicaciones.</p>
+        </div>
+        <p class="apps-public-note reveal" style="--i:4">Presentación institucional de las herramientas. No se ofrecen descargas públicas.</p>
       </div>
     </section>
 
@@ -143,5 +201,6 @@
     <img class="reveal" src="assets/img/logo-astor-wilson.svg" alt="Astor Wilson">
   </footer>
   <script defer src="assets/main.js"></script>
+  <script defer src="assets/apps.js"></script>
 </body>
 </html>
